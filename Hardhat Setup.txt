@@ -1,0 +1,13 @@
+Default hardhat project
+---------------------------------------------
+mkdir hardhatprj
+>cd hardhatprj
+>npm init
+>npx hardhat  or npm install --save-dev hardhat 
+//Check hardhat.config.js
+//If dependencies asked the install dependencies
+>npm install --save-dev "hardhat" "@nomicfoundation/hardhat-toolbox"
+>npx hardhat compile or npx hardhat clean or npx hardhat compile --force
+>npx hardhat test
+>npx hardhat run .\scripts\deploy.js
+-----------------------------------------------
