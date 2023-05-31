@@ -1,0 +1,18 @@
+require("@nomicfoundation/hardhat-toolbox");
+
+/** @type import('hardhat/config').HardhatUserConfig */
+//const API_URL="https://eth-goerli.g.alchemy.com/v2/fe0rwIGll7D_08AS-6CDRWNkq_SjtDLT";
+const API_URL="https://goerli.infura.io/v3/46c4563e457c4138aee065632954b781";
+const PRIVATE_KEY="0b673eb34ed87d8fe037043f39290338af149c7273e1790f2eb13b888e8fa154";
+module.exports = {
+  solidity: "0.8.17",
+  defaultNetwork: "goerli",
+  networks: {
+    hardhat: {},
+    goerli: {
+      url: API_URL,
+      accounts: [`0x${PRIVATE_KEY}`],
+    },
+  },
+};
+
